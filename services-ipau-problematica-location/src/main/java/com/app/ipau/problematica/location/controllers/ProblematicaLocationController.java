@@ -2,6 +2,8 @@ package com.app.ipau.problematica.location.controllers;
 
 import java.util.List;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -38,7 +40,7 @@ public class ProblematicaLocationController {
 	}
 	
 	@PostMapping("/addProblematicaLocation")
-	public ProblematicaLocation saveProblematicaLocation(@RequestBody ProblematicaLocation problematicaLocaction) {
+	public ProblematicaLocation saveProblematicaLocation(@RequestBody @Valid ProblematicaLocation problematicaLocaction) {
 		return probLocationServices.save(problematicaLocaction);
 	}
 	
