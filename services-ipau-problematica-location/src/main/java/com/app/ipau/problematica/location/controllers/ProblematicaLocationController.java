@@ -51,7 +51,7 @@ public class ProblematicaLocationController {
 	@PutMapping("/updateCountMarker/{idProbLocation}")
 	@ResponseStatus(HttpStatus.CREATED)
 	public ProblematicaLocation updateProbLocation(@PathVariable Long idProbLocation) {
-		ProblematicaLocation problematicaLocationDb = probLocationServices.findById(idProb);
+		ProblematicaLocation problematicaLocationDb = probLocationServices.findById(idProbLocation);
 		problematicaLocationDb.setCantVecesMarcada(problematicaLocationDb.getCantVecesMarcada() + 1);
 		return probLocationServices.save(problematicaLocationDb);
 	}
