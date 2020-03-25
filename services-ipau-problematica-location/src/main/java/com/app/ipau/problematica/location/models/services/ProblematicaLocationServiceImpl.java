@@ -44,4 +44,9 @@ public class ProblematicaLocationServiceImpl implements IProblematicaLocation {
 	public ProblematicaLocation save(ProblematicaLocation problematicaLocation) {
 		return problematicaLocationDao.save(problematicaLocation);
 	}
+
+	@Override
+	public List<ProblematicaLocation> findProbLocationPerPrivacy(boolean isPrivate, int idProblematica3) {
+		return problematicaLocationDao.findProbLocationPerPrivacy(isPrivate, idProblematica3);
+	}
 }

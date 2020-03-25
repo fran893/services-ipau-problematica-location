@@ -32,6 +32,11 @@ public class ProblematicaLocationController {
 		return probLocationServices.findAll();
 	}
 	
+	@GetMapping("/problematicasLocationPerPrivacy/{isPrivacy}/{idProb3}")
+	public List<ProblematicaLocation> listarPorPrivacidad(@PathVariable boolean isPrivacy, @PathVariable int idProb3){
+		return probLocationServices.findProbLocationPerPrivacy(isPrivacy, idProb3);
+	}
+	
 	@GetMapping("/getLocation/{latitud}/{longitud}")
 	public ProblematicaLocation getLocation(@PathVariable Double latitud, @PathVariable Double longitud) {
 		return probLocationServices.findByLatitudAndLongitud(latitud, longitud);

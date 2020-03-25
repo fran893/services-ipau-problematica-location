@@ -16,4 +16,6 @@ public interface IProblematicaLocation {
 	
 	public ProblematicaLocation save(ProblematicaLocation problematicaLocation);
 	
+	public List<ProblematicaLocation> findProbLocationPerPrivacy(boolean isPrivate, int idProblematica3);
+	
 }
