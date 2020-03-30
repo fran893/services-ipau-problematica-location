@@ -15,8 +15,8 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.http.HttpStatus;
 
-import com.app.ipau.commons.problematica.location.models.entities.ProblematicaLocation;
 import com.app.ipau.problematica.location.models.services.IProblematicaLocation;
+import com.app.ipau.problematicalocation.models.entities.ProblematicaLocation;
 
 @RestController
 public class ProblematicaLocationController {

@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.app.ipau.problematica.location.models.dao.ProblematicaLocationDao;
-import com.app.ipau.commons.problematica.location.models.entities.ProblematicaLocation;
+import com.app.ipau.problematicalocation.models.entities.ProblematicaLocation;
 
 @Service
 public class ProblematicaLocationServiceImpl implements IProblematicaLocation {

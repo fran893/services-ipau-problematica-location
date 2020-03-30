@@ -21,7 +21,7 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>com.app.ipau.commons.problematica.location</groupId>
+			<groupId>com.app.ipau.problematicalocation</groupId>
 			<artifactId>services-ipau-commons-problematica-location</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>

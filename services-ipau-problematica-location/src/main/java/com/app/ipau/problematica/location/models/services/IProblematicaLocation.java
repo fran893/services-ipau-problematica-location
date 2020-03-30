@@ -2,7 +2,8 @@ package com.app.ipau.problematica.location.models.services;
 
 import java.util.List;
 
-import com.app.ipau.commons.problematica.location.models.entities.ProblematicaLocation;
+import com.app.ipau.problematicalocation.models.entities.ProblematicaLocation;
+
 
 public interface IProblematicaLocation {
 

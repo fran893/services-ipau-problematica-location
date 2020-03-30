@@ -8,7 +8,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 @EnableEurekaClient
 @SpringBootApplication
 @EntityScan({"com.app.ipau.commons.problematicas.models.entities",
-	"com.app.ipau.commons.problematica.location.models.entities"})
+	"com.app.ipau.problematicalocation.models.entities"})
 public class ServicesIpauProblematicaLocationApplication {
 
 	public static void main(String[] args) {

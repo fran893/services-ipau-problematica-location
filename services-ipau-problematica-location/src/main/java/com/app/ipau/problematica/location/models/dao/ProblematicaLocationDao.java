@@ -5,7 +5,8 @@ import java.util.List;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 
-import com.app.ipau.commons.problematica.location.models.entities.ProblematicaLocation;
+import com.app.ipau.problematicalocation.models.entities.ProblematicaLocation;
+
 
 public interface ProblematicaLocationDao extends CrudRepository<ProblematicaLocation, Long> {
 	
